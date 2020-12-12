@@ -12,7 +12,7 @@ Operációs rendszer: Windows 10
 ## Adatbázisban nyilvántartott adatok
 - Adatbázis: kocsiks
 - Tábla: kocsidb
-- Táblában nyilvántartott mezők(tipussal):\ 
+- Táblában nyilvántartott mezők(tipussal): <br>
 id(varchar(255)), tipus(varchar(255)), keszult(date), keszultdb(int), telephe(varchar(255)), kategoria(varchar(255))
 - Kulcs mező: id
 
