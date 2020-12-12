@@ -1,4 +1,4 @@
-# <center> Keretrendszer alapú programozás </center>
+# Keretrendszer alapú programozás
 ## Program leírás
 A programom autók kezelésére alkalmas.
 Lehetőség van az autók kilistázására, törlésére és módosítására. Ezen kívül lehetséges új autót is felvinni az adatbázisba.
