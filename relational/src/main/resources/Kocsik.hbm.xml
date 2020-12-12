@@ -1,0 +1,15 @@
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/hibernate-mapping">
+    <class name="com.beadando.model.Kocsik" table="kocsiDb">
+        <id name="id" type="string" column="id"/>
+        <property name="tipus" column="tipus" type="string"/>
+        <property name="keszult" column="keszult" type="LocalDate"/>
+        <property name="keszultdb" column="keszultdb" type="int"/>
+        <property name="telephe" column="telephe" type="string"/>
+        <property name="kategoria" column="kategoria" >
+            <type name="org.hibernate.type.EnumType">
+                <param name="enumClass">com.beadando.model.Kategoria</param>
+                <param name="useNamed">true</param>
+            </type>
+        </property>
+    </class>
+</hibernate-mapping>
