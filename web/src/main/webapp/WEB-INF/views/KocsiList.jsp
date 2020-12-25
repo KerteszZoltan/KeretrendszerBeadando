@@ -13,7 +13,7 @@
 <form:form method="post" action="${action}" modelAttribute="kocsi">
 <tr><td><form:label path="kategoria">Kategoria</form:label>
     <form:select path="kategoria" >
-        <form:options items="${Kategoria1}"/>
+        <form:options items="${Kategoria}"/>
     </form:select></td></tr> </td><td>
     <input type="submit" value="Szűrés">
     </form:form>
@@ -35,7 +35,7 @@
     <table frame="border" rules="all">
         <tr><th>ID</th><th>Tipus</th><th>Készült</th><th>hány darab készült</th><th>Telephely</th><th>Kategória</th></tr>
         <c:forEach items="${kocsik}" var="kocsik">
-            <tr><td><a href="${pageContext.servletContext.contextPath}/kocsik/${kocsik.id}">${kocsik.id}</a></td><td>${kocsik.tipus}</td><td>${kocsik.keszult}</td><td>${kocsik.kategoria}</td><td>${kocsik.telephe}</td><td>${kocsik.keszultdb}</td><td><a href="${pageContext.servletContext.contextPath}/removeBd/${kocsik.id}">Törlés</a></td><td><a href="${pageContext.servletContext.contextPath}/modifyBd/${kocsik.id}">Módosítás</a></td></tr>
+            <tr><td><a href="${pageContext.servletContext.contextPath}/kocsik/${kocsik.id}">${kocsik.id}</a></td><td>${kocsik.tipus}</td><td>${kocsik.keszult}</td><td>${kocsik.keszultdb}</td><td>${kocsik.telephe}</td><td>${kocsik.kategoria}</td><td><a href="${pageContext.servletContext.contextPath}/removeBd/${kocsik.id}">Törlés</a></td><td><a href="${pageContext.servletContext.contextPath}/modifyBd/${kocsik.id}">Módosítás</a></td></tr>
         </c:forEach>
     </table>
 </c:if>
